@@ -1,0 +1,26 @@
+.title {
+        color: rgb(163, 66, 66);
+}
+
+.title-card{
+    padding-top: 20rem;
+    width: 70%;
+    border-bottom: 0.2rem solid rgb(163,66,66);
+    margin-left: 3rem;
+    padding-left: 2rem;
+}
+
+.my-history {
+    display:flex;
+    margin-left: 3.5rem;
+    padding-left:1.5rem;
+    margin-top:20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 40rem;
+    border-radius:10px;
+    background-color: rgb(219, 166, 166);
+    box-shadow: 0 2px 8px rgb(163, 69, 69);
+}
