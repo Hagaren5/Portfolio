@@ -1,0 +1,103 @@
+.portfolioScreen__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.portfolioScreen__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.699);
+  background-size: cover;
+}
+
+.portfolioScreen__projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  border-radius: 40px;
+  background-image: linear-gradient(rgba(64, 48, 107, 255), rgba(46, 29, 72, 255));
+  height: 100%;
+  min-height: 500px;
+  max-height: 600px;
+  width: 1000px;
+}
+
+.portfolioScreen__project {
+  display: flex;
+  background-image: url(../img/pkbll.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 50px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.portfolioScreen__linkName {
+  display: flex;
+  color: white;
+  margin-left: 1rem;
+}
+
+.portfolioScreen__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolioScreen__project:hover {
+  background-image: url(../img/pkbll.png);
+  transform: rotate(45deg);
+  transition: transform 0.7s ease-in-out;
+  animation: 3s para;
+}
+
+@keyframes para {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+  80% {
+    transform: rotate(15deg);
+  }
+  90% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
