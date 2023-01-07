@@ -1,13 +1,13 @@
 import React from 'react'
 
-import classes from './PortfolioScreen.module.css'
+import classes from './PortfolioScreen.module.scss'
 
 function PortfolioScreen() {
   return (
-    <>
+    <div className={classes.PortfolioScreen}>
       <div className={classes.portfolioScreen__container}>
         <div className={classes.portfolioScreen__title}>
-          <h1>My projects</h1>
+          <img src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png" />
         </div>
         <div className={classes.portfolioScreen__projects}>
           <div className={classes.portfolioScreen__group}>
@@ -24,7 +24,7 @@ function PortfolioScreen() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

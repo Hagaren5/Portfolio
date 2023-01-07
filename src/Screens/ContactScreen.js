@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './ContactScreen.module.css'
+import classes from './ContactScreen.module.scss'
 
 function ContactScreen(){
 

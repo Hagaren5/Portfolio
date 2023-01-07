@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
-import classes from './NavigationBar.module.css'
+import classes from './NavigationBar.module.scss'
 
 function NavigationBar() {
   const location = useLocation()
@@ -21,6 +21,11 @@ function NavigationBar() {
       {location.pathname !== '/portfolio' && (
         <NavLink to="/portfolio" className={classes.navigation__link}>
           Portfolio
+        </NavLink>
+      )}
+      {location.pathname !== '/experience' && (
+        <NavLink to="/experience" className={classes.navigation__link}>
+          Experience
         </NavLink>
       )}
       {location.pathname !== '/contact' && (

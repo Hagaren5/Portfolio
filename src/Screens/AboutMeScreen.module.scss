@@ -1,0 +1,32 @@
+.AboutMeScreen__background {
+  height: 56rem;
+  background-color: rgba(238, 238, 238, 0.781);
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.AboutMeScreen__explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 405px;
+  margin-top: 5rem;
+  max-height: 500px;
+  color: white;
+  border-radius: 50px;
+}
+
+.AboutMeScreen__iam {
+  margin-top: 1rem;
+}
+
+.AboutMeScreen__picture {
+  max-height: 500px;
+  border-radius: 60px;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+}

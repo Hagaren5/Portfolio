@@ -6,6 +6,7 @@ import AboutMeScreen from './Screens/AboutMeScreen'
 import NavigationBar from './Components/NavigationBar'
 import PortfolioScreen from './Screens/PortfolioScreen'
 import ContactScreen from './Screens/ContactScreen'
+import ExperienceScreen from './Screens/ExperienceScreen'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/aboutme" element={<AboutMeScreen />} />
         <Route path="/portfolio" element={<PortfolioScreen />} />
         <Route path="/contact" element={<ContactScreen />} />
+        <Route path="/experience" element={<ExperienceScreen />} />
       </Routes>      
     </div>
   )

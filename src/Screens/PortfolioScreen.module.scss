@@ -1,3 +1,13 @@
+.PortfolioScreen{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  height: 56rem;
+  background-size: cover;
+  background-image: url(../img/background.png);
+}
+
 .portfolioScreen__container {
   display: flex;
   justify-content: center;
@@ -13,7 +23,6 @@
   align-items: center;
   position: relative;
   height: 10rem;
-  background-color: rgba(255, 255, 255, 0.699);
   background-size: cover;
 }
 
