@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+{
+    title: 'Frontend developer',
+    company: 'Knowmadmood',
+    date: 'September 2023 - now',
+    description:
+      'Proficient in React development, adept at crafting responsive and dynamic user interfaces to enhance the user experience. Skilled in utilizing Git version control for efficient collaboration and code management within development teams. Experienced in conducting thorough code reviews to ensure adherence to best practices, maintain code quality, and facilitate knowledge sharing among team members. Continuously strive to optimize workflow efficiency and project outcomes through effective communication, problem-solving, and a commitment to delivering high-quality code.'
+
+  },
+  {
+    title: 'Frontend developer & QA',
+    company: 'GoTrendier',
+    date: 'June 2022 - September 2023',
+    description: [
+      'Frontend development using React, introducing new screens and refining existing structures.',
+      'Collaborating closely with UI/UX teams, implementing design changes and optimizing user interaction.',
+      'Participate actively in code reviews and provide valuable feedback to developers on code quality and testability.'
+    ]
+  },
+  {
+    title: 'Fullstack developer',
+    company: 'Mytic Innova',
+    date: 'November 2021 - June 2022',
+    description: [
+      'Developed REST APIs using Java to provide efficient communication between server and client applications.',
+      'Utilized Postman to rigorously test API endpoints, ensuring data accuracy, security, and optimal performance.',
+      'Created comprehensive frontend tests for React applications using Jest, improving code quality and catching issues early in the development process.'
+    ]
+  }
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">     
+    {
+        EXPERIENCE.map( (experience) =>
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        )    
+    }
+</ol>
+
