@@ -1,14 +1,13 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
+import ExperienceItem from './ExperienceItem.astro'
 
 const EXPERIENCE = [
-{
+  {
     title: 'Frontend developer',
     company: 'Knowmadmood',
     date: 'September 2023 - now',
     description:
       'Proficient in React development, adept at crafting responsive and dynamic user interfaces to enhance the user experience. Skilled in utilizing Git version control for efficient collaboration and code management within development teams. Experienced in conducting thorough code reviews to ensure adherence to best practices, maintain code quality, and facilitate knowledge sharing among team members. Continuously strive to optimize workflow efficiency and project outcomes through effective communication, problem-solving, and a commitment to delivering high-quality code.'
-
   },
   {
     title: 'Frontend developer & QA',
@@ -33,14 +32,12 @@ const EXPERIENCE = [
 ]
 ---
 
-
-<ol class="relative border-s border-gray-200 dark:border-gray-700">     
-    {
-        EXPERIENCE.map( (experience) =>
-            <li class="mb-10 ms-4">
-                <ExperienceItem {...experience} />
-            </li>
-        )    
-    }
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map(experience => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
 </ol>
-
