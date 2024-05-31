@@ -10,6 +10,8 @@ import SectionContainer from '../components/SectionContainer.astro'
 import CpuIcon from '../components/icons/Cpu.astro'
 import CodeIcon from '../components/icons/Code.astro'
 import Projects from '../components/Projects.astro'
+import PersonIcon from '../components/icons/Person.astro'
+import AboutMe from '../components/AboutMe.astro'
 ---
 
 <Layout title="Oriol Sepúlveda - Desarrollador y Programador Web" description="2+ años de experiencia">
@@ -21,18 +23,11 @@ import Projects from '../components/Projects.astro'
         alt="oriol photo"
       />
       <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-        Hey, I'm Oriol <a
-          href="https://www.linkedin.com/in/oriol-sepulveda/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"><Badge>Available to work</Badge></a>
+        Hey, I'm Oriol <a href="../public/Download/Oriol_Sepulveda_dev.pdf" class="flex justify-center items-center" download><Badge>Download my CV</Badge></a>
       </h1>
       <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span>Frontend developer. </span>
         <span class="text-purple-400/90"> 2+ year of experience.</span>
-        <span class="opacity-80">
-          I am a very proactive person eager to learn, very good teamworker and meticulous.
-        </span>
       </h2>
 
       <nav class="flex gap-4 mt-8 flex-wrap">
@@ -57,7 +52,6 @@ import Projects from '../components/Projects.astro'
       </h2>
       <Experience />
     </SectionContainer>
-
     <SectionContainer id="projects">
       <h2 class="text-3xl font-semibold mb-8 flex gap-x-3 items-center">
         <CodeIcon class="size-8" />
@@ -65,6 +59,12 @@ import Projects from '../components/Projects.astro'
       </h2>
       <Projects />
     </SectionContainer>
-
+    <SectionContainer id="about-me">
+      <h2 class="text-3xl font-semibold mb-8 flex gap-x-3 items-center">
+        <PersonIcon class="size-8" />
+        About me
+      </h2>
+      <AboutMe />
+    </SectionContainer>
   </main>
 </Layout>

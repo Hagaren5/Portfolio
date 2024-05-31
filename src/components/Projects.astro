@@ -5,40 +5,60 @@ import CSS from './icons/CSS.astro'
 import HTML from './icons/HTML.astro'
 import Redux from './icons/Redux.astro'
 import Firebase from './icons/Firebase.astro'
+import Tailwind from './icons/Tailwind.astro'
+import Node from './icons/Node.astro'
 const TAGS = {
   React: {
     name: 'Reactjs',
-    class: 'bg-gray-800 text-sky-200',
+    class: 'bg-sky-800/30 text-sky-200',
     icon: React
   },
   JavaScript: {
     name: 'JavaScript',
-    class: 'bg-gray-800 text-yellow-300',
+    class: 'bg-yellow-200/30 text-yellow-300',
     icon: JavaScript
   },
   HTML: {
     name: 'HTML5',
-    class: 'bg-gray-800 text-orange-300',
+    class: 'bg-orange-800/30 text-orange-300',
     icon: HTML
   },
   CSS: {
     name: 'CSS',
-    class: 'bg-gray-800 text-blue-300',
+    class: 'bg-blue-800/30 text-blue-300',
     icon: CSS
   },
   Redux: {
     name: 'Redux',
-    class: 'bg-gray-800 text-purple-300',
+    class: 'bg-purple-800/30 text-purple-300',
     icon: Redux
   },
    Firebase: {
     name: 'Firebase',
-    class: 'bg-gray-800 text-orange-200',
+    class: 'bg-orange-800/30 text-orange-200',
     icon: Firebase
   },
+  Tailwind: {
+    name: 'Tailwind',
+    class: 'bg-sky-800/30 text-sky-200',
+    icon: Tailwind
+  },
+  Node:{
+    name: 'NodeJS',
+    class:'bg-green-800/30 text-green-200',
+    icon: Node
+  }
 
 }
 const PROJECTS = [
+  {
+    title: 'Kamidana Dojo',
+    description: "My dojo's webpage.",
+    link: 'https://netflixcloneportfolio.netlify.app/',
+    github: 'https://github.com/Hagaren5/Kamidana',
+    image: '/projects/kamidana.webp',
+    tags: [TAGS.React,  TAGS.JavaScript , TAGS.CSS, TAGS.HTML, TAGS.Tailwind]
+  },
   {
     title: 'Netflix Clone',
     description: "A clone copying netflix's page. Created to practice React and Redux mainly.",
@@ -46,6 +66,14 @@ const PROJECTS = [
     github: 'https://github.com/Hagaren5/netflix_clone',
     image: '/projects/netflixClone.webp',
     tags: [TAGS.React,  TAGS.JavaScript , TAGS.Redux, TAGS.CSS, TAGS.HTML, TAGS.Firebase]
+  },
+  {
+    title: 'Pokemon Pokedex',
+    description: "A web application created for fun to be able to watch Pokemon's in a more personalized way.",
+    link: 'https://netflixcloneportfolio.netlify.app/',
+    github: 'https://github.com/Hagaren5/Pokemon',
+    image: '/projects/underConstruction.webp',
+    tags: [TAGS.React,  TAGS.JavaScript , TAGS.Node, TAGS.CSS, TAGS.HTML]
   }
 ]
 ---
@@ -53,7 +81,7 @@ const PROJECTS = [
 {
   PROJECTS.map(({ title, description, tags, image }) => (
     <article>
-      <h3 class="text-2xl font-semibold text-purple-400/90">{title}</h3>
+      <h3 class="text-2xl font-semibold text-purple-400/90 pt-10">{title}</h3>
       <p class="text-lg mb-4 text-pretty">{description}</p>
       <ul class="flex gap-x-2 flex-row pb-4">
         {tags.map(tag => (
