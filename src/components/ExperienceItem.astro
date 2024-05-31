@@ -2,10 +2,9 @@
 interface Props {
   title: string
   company: string
-  description: string
+  description: string | string[]
   link?: string
   date: string
-
 }
 
 const { title, description, link, date, company} = Astro.props
